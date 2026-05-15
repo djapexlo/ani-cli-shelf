@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ani-cli-shelf"
-version = "0.77"
+version = "0.87"
 description = "A Streamlit frontend for ani-cli — browse history, search anime, manage favourites and playlists"
 readme = "ani_shelf/README.md"
 requires-python = ">=3.10"
