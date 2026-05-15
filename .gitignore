@@ -1,0 +1,35 @@
+# ── Runtime data (generated on first use) ────────────────────────────────────
+jikan_cache.json
+favourites.json
+playlists.json
+overrides.json
+settings.json
+ep_cache.json
+anime_list.txt
+
+# ── Playback state ────────────────────────────────────────────────────────────
+.anicli_pid
+.anicli_log
+
+# ── User uploads ─────────────────────────────────────────────────────────────
+thumbnails/*
+!thumbnails/.gitkeep
+
+# ── Streamlit config (written by app at runtime) ──────────────────────────────
+.streamlit/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini

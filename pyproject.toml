@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ani-cli-shelf"
+version = "0.77"
+description = "A Streamlit frontend for ani-cli — browse history, search anime, manage favourites and playlists"
+readme = "ani_shelf/README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "djapexlo", url = "https://github.com/djapexlo" }]
+dependencies = [
+    "streamlit>=1.35",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+ani-cli-shelf = "ani_shelf.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/djapexlo/ani-cli-shelf"
+"Bug Tracker" = "https://github.com/djapexlo/ani-cli-shelf/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ani_shelf*"]
+
+[tool.setuptools.package-data]
+ani_shelf = ["ani-cli-print", "thumbnails/.gitkeep"]
